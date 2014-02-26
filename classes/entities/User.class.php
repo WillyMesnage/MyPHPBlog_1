@@ -13,7 +13,7 @@ class User{
     private $email;
     private $password;
     
-    function __construct($firstName, $lastName, $email, $password) {
+    function __construct( $email, $password, $firstName = NULL , $lastName = NULL) {
         $this->firstName = $firstName;
         $this->lastName = $lastName;
         $this->email = $email;

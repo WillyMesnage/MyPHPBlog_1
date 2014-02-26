@@ -14,12 +14,13 @@ class Post {
     private $publication_date;
     private $user;
 
-    function __construct($title, $body, $publication_date, $user) {
+    function __construct($title, $body, $publication_date, $user, $id = NULL) {
         
         $this->title = $title;
         $this->body = $body;
         $this->publication_date = $publication_date;
         $this->user = $user;
+        $this->id = $id;
     }
     
     public function getId() {
